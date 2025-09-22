@@ -1,0 +1,137 @@
+[
+  {
+    "name": "GetAllPatients",
+    "scriptFile": "FHIRMetricPOC.API.dll",
+    "entryPoint": "FHIRMetricPOC.API.Functions.MeasuresFunctions.GetAllPatients",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Anonymous",
+        "methods": [
+          "get"
+        ],
+        "route": "measures/patients",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetHbA1cMeasure",
+    "scriptFile": "FHIRMetricPOC.API.dll",
+    "entryPoint": "FHIRMetricPOC.API.Functions.MeasuresFunctions.GetHbA1cMeasure",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Anonymous",
+        "methods": [
+          "get"
+        ],
+        "route": "measures/hba1c",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetBpMeasure",
+    "scriptFile": "FHIRMetricPOC.API.dll",
+    "entryPoint": "FHIRMetricPOC.API.Functions.MeasuresFunctions.GetBpMeasure",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Anonymous",
+        "methods": [
+          "get"
+        ],
+        "route": "measures/bp",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetPatients",
+    "scriptFile": "FHIRMetricPOC.API.dll",
+    "entryPoint": "FHIRMetricPOC.API.Functions.MeasuresFunctions.GetPatients",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Anonymous",
+        "methods": [
+          "get"
+        ],
+        "route": "patients",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  },
+  {
+    "name": "GetObservations",
+    "scriptFile": "FHIRMetricPOC.API.dll",
+    "entryPoint": "FHIRMetricPOC.API.Functions.MeasuresFunctions.GetObservations",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "req",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Anonymous",
+        "methods": [
+          "get"
+        ],
+        "route": "observations",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  }
+]
